@@ -4,7 +4,7 @@ pipeline{
 		maven 'maven3.9'
 	}
 	stages{
-		stage("Checkout Code"){
+		stage("Checkout_Code"){
 		steps{
 			git branch: 'master' , url: 'https://github.com/chinmay1998/Java_Project.git'
 		     }
