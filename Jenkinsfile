@@ -6,7 +6,7 @@ pipeline{
 	stages{
 		stage("Checkout_Code"){
 		steps{
-			git branch: 'master' , url: 'https://github.com/chinmay1998/Java_Project.git'
+			git branch: 'master' , url: 'https://github.com/Biswal1997/Java_APP.git'
 		     }
 		}	 
 		stage("Build_Code"){
@@ -16,7 +16,7 @@ pipeline{
 		}
 		stage("Deployment"){
 		steps{
-			deploy adapters: [tomcat9(credentialsId: 'tomcatcred',url: 'http://18.61.30.53:8080/')],contextPath: 'welcomeapp',war: '**/*.war'
+			deploy adapters: [tomcat9(credentialsId: 'tomcatcred',url: 'http://13.127.222.13:8080/')],contextPath: 'welcomeapp',war: '**/*.war'
 		     }
 		}
 	
