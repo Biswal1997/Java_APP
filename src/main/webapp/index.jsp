@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>AVD2</title>
+		<title>AVD_GROUP</title>
 	</head>
 	<body>
 		<h2 style="background: blue;text-align: center;color: white;">AVD2</h2>
