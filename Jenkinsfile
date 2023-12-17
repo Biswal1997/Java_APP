@@ -3,8 +3,8 @@ pipeline{
 	stages{
 		stage('Checkout_Code'){
 			steps{
-				git url: 'https://github.com/Biswal1997/Java_APP.git' branch: 'master'
-			}
+				git branch: 'master',url: 'https://github.com/Biswal1997/Java_APP.git'
+		    }
 		}
 	}
 }
